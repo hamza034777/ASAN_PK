@@ -1,0 +1,842 @@
+/*default style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "mukta",sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+/*end of default style*/
+
+/*container*/
+/*navbar*/
+.navbar{
+    width: 100%;
+    height: 19rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 1rem 5rem black;
+}
+
+.navbar-top{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.navbar-top div{
+    margin: 0 4rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo i{
+    font-size: 4rem;
+    color: blue;
+    margin-right: 2rem;
+}
+
+.search-bar{
+    position: relative;
+}
+
+.logo span{
+    font-family:"kenia";
+    font-size: 3.5rem;
+    color: blue;
+    letter-spacing: .1rem;
+}
+
+.search-bar input{
+    width: 52rem;
+    padding: 1.2rem 1.4rem 1.2rem 3.7rem;
+    color: blue;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    background-color: white;
+    font-weight: 300;
+}
+
+.search-bar input::placeholder{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: blue;
+}
+
+.search-bar i{
+    position: absolute;
+    top: 50%;
+    left: 1.4rem;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    color: blue;
+}
+
+.user{
+    font-size: 1.7rem;
+    color: blue;
+}
+
+.user i,.user span{
+    margin-right: 1.2rem;
+}
+
+.nav-list{
+    display: flex;
+    height: 8.5rem;
+    padding-top: 2rem;
+}
+
+.nav-list div{
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1rem black;
+    cursor: pointer;
+}
+
+.nav-list div:nth-child(1){
+    border: none;
+}
+
+.nav-list i{
+    font-size: 2rem;
+    color: blue;
+    margin-bottom: 1rem;
+}
+
+.nav-list span{
+    font-size: 1.6rem;
+    color: blue;
+    letter-spacing: .1rem;
+}
+/*end of navbar*/
+
+/*landing*/
+.landing{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.landing-bg{
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 50rem;
+    background-color: skyblue;
+    border-radius: 3rem;
+}
+
+.banner{
+    width: 87%;
+    height: 65rem;
+    position: absolute;
+    top: .8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: linear-gradien;
+    border-radius: 3rem;
+}
+
+.banner-img{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-radius:  1rem;
+    opacity:.3rem;
+}
+
+.banner-heading{
+    position: absolute;
+    top: 10rem;
+    right: 5rem;
+    font-size: 8rem;
+    color: blue;
+    width: 40%;
+    line-height: 1;
+    text-align: right;
+    text-shadow: 0 3rem 3rem rgba(0,0,.8);
+}
+
+.banner-btn{
+    position: absolute;
+    top: 28rem;
+    width: 18rem;
+    height: 4rem;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+    .banner-btn-1{
+        right: 25rem;
+        background-color: blueviolet;
+        color: white;
+    }
+
+    .banner-btn-1:hover{
+        background-color: orange;
+        color: black;
+    }
+
+    .banner-btn-2{
+        right: 5rem;
+        background-color: blueviolet;
+        color: white;
+    }
+
+    .banner-btn-2:hover{
+        background-color: orange;
+        color: black;
+    }
+/*end of landing*/
+
+/*products*/
+
+.products{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    padding-top: 5rem;
+}
+
+.products-top{
+    width: 60%;
+    margin-right: 8rem;
+}
+
+.products h3{
+    font-size: 2rem;
+    color: darkblue;
+}
+.products h2{
+    font-size: 7rem;
+    color: blue;
+}
+.products h1{
+    font-size: 9rem;
+    color: purple;
+    margin-top: -2rem;
+}
+
+.products-icons{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.products-icons div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+    height: 28rem;
+    margin-right: 2rem;
+    padding: 3rem 0;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: whitesmoke;
+    transition: all .4s;
+}
+
+.products-icons div:hover{
+    background-color: orange;
+    box-shadow: 0 3rem 5rem black;
+}
+
+.products-icons div:last-child{
+    margin-right: 0;
+}
+
+.products-icons div img{
+    margin-bottom: 3rem;
+}
+
+.products-icons div span{
+    font-size: 2.5rem;
+    color: blue;
+}
+/*end of products*/
+
+/*pricing*/
+.pricing{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20rem;
+}
+
+.pricing-top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15rem;
+}
+
+.pricing-top img{
+    margin-right: 20rem;
+}
+
+.pricing-top h1 {
+    font-size: 7rem;
+    width: 50rem;
+    line-height: 1;
+    margin-bottom: 3rem;
+    color: darkblue;
+}
+
+.pricing-top button , .pricing button{
+    width: 18rem;
+    height: 4rem;
+    background-color: orange;
+    border: .3rem solid black;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    color: black;
+    cursor: pointer;
+    transition: all.3s;
+}
+
+.pricing button:hover{
+    background-color: purple;
+    color: white;
+    border: .2rem solid whitesmoke;
+}
+
+.pricing-top button:hover{
+    background-color: purple;
+    color: white;
+    border: .2rem solid whitesmoke;
+
+}
+
+.pricing-cards{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+.pricing-card{
+    width: 30rem;
+    height: 45rem;
+    background-color: whitesmoke;
+    margin: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 0;
+    cursor: pointer;
+    position: relative;
+    transition: all .3s;
+}
+
+.pricing-card:hover{
+    background-color: orange;
+    box-shadow: .3rem solid black;
+    transform: translateY(2rem);
+}
+
+.pricing-card-icons{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card-icons i{
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+    font-size: 1.2rem;
+    color: blue;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(2rem);
+    transition: all .3s;
+}
+
+.pricing-card:hover .pricing-card-icons i{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.img-wrapper{
+    width: 20rem;
+    height: 18rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-card h3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    color: blue;
+}
+
+.stars i{
+    color: orange;
+    font-size: 1.6rem;
+}
+
+.pricing-card h4 {
+    font-size: 1.8rem;
+    color: darkblue;
+}
+/*end of pricing*/
+
+/*blog*/
+
+.blog{
+    width: 100%;
+    height: 95vh;
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-content{
+    width: 50%;
+    height: 50rem;
+    background-color: orange;
+    border-radius: 3rem
+}
+
+.blog-top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.blog-top img{
+    margin-top: 5rem;
+}
+
+.trends h1{
+    font-size: 6rem;
+    width: 35rem;
+    line-height: 1;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.trends button{
+    width: 18rem;
+    height: 4rem;
+    background-color: darkblue;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+}
+
+.blog-articles{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.article{
+    width: 23rem;
+    height: 10rem;
+    margin: 0 3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.article span{
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.article span:nth-child(1){
+    font-size: 5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+/*end of blog*/
+
+/*contact*/
+.contact{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content{
+    width: 50%;
+    height: 15rem;
+    display: flex;
+}
+
+.content-left{
+    width: 40%;
+    height: 100%;
+    background-color: orange;
+    border-radius: 2rem 0 0 2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+}
+
+.content-left h2{
+    width: 80%;
+    font-size: 2.2rem;
+    color: white;
+}
+
+.content-left span{
+    font-size: 2.5rem;
+    color: blue;
+}
+
+.content-right{
+    width: 60%;
+    height: 100%;
+    background-color: darkblue;
+    border-radius: 0 2rem 2rem 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-right input{
+    width: 35rem;
+    height: 4rem;
+    background-color: #174b69;
+    padding: 2rem;
+    border: none;
+    border-radius: .5rem;
+    color: white;
+    margin-right: 1rem;
+}
+
+.content-right input::placeholder{
+    color: white;
+    font-size: 1.4rem;
+
+}
+
+.content-right input:focus{
+    border: .1rem solid orange;
+}
+
+.content-right button{
+    width: 10rem;
+    height: 4rem;
+    background-color: orange;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+}
+/*end of contact*/
+
+/*footer*/
+.footer{
+    width: 50%;
+    height: 5rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: .1rem solid white;
+}
+
+.copyright{
+    font-size: 1.6rem;
+    color: blue;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+}
+
+.brand i{
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: orange;
+}
+
+.brand h1 {
+    font-family: "KENIA",cursive;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    color: darkblue;
+}
+/*end of footer*/
+/*end of container*/
+
+/*responsive*/
+@media(max-width:1600px){
+
+.blog{
+        width: 90%;
+    }
+
+    .landing-bg{
+        width: 90%;
+        left: 45%;
+    }
+
+    .banner-img{
+        padding-right: 15rem;
+    }
+
+    .products-top{
+        padding-left: 10rem;
+    }
+
+}
+
+    @media(max-width:1400px){
+        html{
+            font-size: 50%;
+        }
+
+        .banner-img{
+            height: 56rem;
+        }
+
+        .products-icons{
+            padding-left: 5rem;
+        }
+
+        .contact-content{
+            width: 60%;
+        }
+    }
+
+    @media(max-width:1200px){
+        html{
+            font-size: 45%;
+        }
+
+        .products-icons{
+            width: 80%;
+        }
+
+        .pricing-card{
+            width: 70%;
+        }
+
+        .blog-content{
+            width: 70%;
+        }
+
+        .contact-content{
+            width: 70%;
+        }
+
+        .copyright{
+            font-size: 2rem ;
+        }
+
+        .brand{
+            font-size: 2rem;
+        }
+    }
+@media(max-width:1000px){
+    html{
+        font-size: 35%;
+    }
+
+    .products-icons{
+        width: 85%;
+
+    }
+
+    .blog-content{
+        height: 60rem;
+    }
+
+    .blog-articles{
+        font-size: 25rem;
+    }
+
+    .products-icons img{
+        width: 30rem;
+    }
+
+    .pricing-card img{
+        width: 35rem;
+    }
+    
+}
+
+@media(max-width:800px){
+    html{
+        font-size: 30%;
+    }
+
+    .products-icons{
+        width: 90%;
+    }
+
+    .pricing-toph1{
+        font-size: 2.5rem;
+    }
+
+    .pricing-top button{
+        width: 50%;
+    }
+
+    .blog-content{
+        height: 50%;
+        width: 80%;
+    }
+
+    .blog{
+        height: 85vh;
+    }
+
+    .products-icons img{
+        width: 25rem;
+    }
+
+    .pricing-card img{
+        width: 30rem;
+    }
+}
+
+@media(max-width:600px){
+    html{
+        font-size: 23%;
+    }
+
+    .landing-bg{
+        width: 114%;
+    }
+
+    .landing-img{
+        width: 100%;
+    }
+
+    .products-icons{
+        font-size: 100%;
+    }
+
+    .products-icons img{
+        width: 20rem;
+    }
+    
+    .pricing-top img{
+        width: 35rem;
+    }
+
+    .pricing-card img{
+        width: 25rem;
+    }
+    .blog{
+        width: 100%;
+    }
+
+    .contact-content{
+        width: 80%;
+    }
+
+    .copyright{
+        font-size: 3rem;
+    }
+
+    .brand{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:400px){
+    html{
+        font-size: 20%;
+    }
+
+
+    .navbar{
+        width: 125rem;
+    }
+    
+    .landing-bg{
+        width: 180%;
+    }
+
+    .banner{
+        width: 180%;
+        padding-left: 30rem;
+    }
+
+    .pricing-top img{
+        padding-left: 20rem;
+        width: 50%;
+    }
+
+    .blog-content{
+        height: 50vh;
+    }
+
+    .blog-content img{
+        width: 80%;
+    }
+
+    .blog-content h1{
+        font-size: 8rem;
+    }
+
+    .blog {
+        width: 135%;
+    }
+
+    .contact-content{
+        width: 90%;
+    }
+
+    .copyright{
+        font-size: 2rem;
+    }
+
+    .brand{
+        width: 20rem;
+        padding-left: 5rem;
+    }
+}
+/*end of responsive*/
